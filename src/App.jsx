@@ -1,16 +1,11 @@
-import Navbar from "./components/Navbar";
-import { Route, Routes, useLocation } from "react-router-dom";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
+import React from "react";
+import Quiz from "./components/Quiz";
+
 function App() {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer />
-    </>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <Quiz />
+    </div>
   );
 }
 
